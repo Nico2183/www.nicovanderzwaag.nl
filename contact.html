@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nico van der Zwaag | Online cv</title>
+
+  <meta name="copyright" content="Nico van der Zwaag">
+  <meta name="description" content="Het online Cv van Nico van der Zwaag">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous">
+  </script>
+
+
+
+  <script src="js/arrays.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <script>
+    $(function() {
+      $('.input-group.date').datepicker({
+        orientation: "auto left",
+        forceParse: false,
+        autoclose: true,
+        todayHighlight: true,
+        toggleActive: true
+      });
+    });
+  </script>
+</head>
+
+<body onload="changeColor()">
+
+  <div class="viewport">
+    <header class="header" role="banner">
+
+      <nav id="nav" class="nav" role="navigation">
+
+        <!-- NAVIGATIE MENU -->
+        <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="index.html/#about" class="nav__link">Over</a></li>
+          <li class="nav__item"><a href="index.html/#services" class="nav__link">Specialisatie</a></li>
+          <li class="nav__item"><a href="index.html/#resume" class="nav__link">Cv</a></li>
+          <li class="nav__item"><a href="index.html/#portfolios" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link">Contactformulier</a></li>
+        </ul>
+
+        <!-- MENU TOGGLE KNOP -->
+        <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
+          <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+            <title>Toggle Menu</title>
+            <g>
+              <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5" />
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5" />
+              <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+            </g>
+          </svg>
+        </a>
+
+        <!-- ANIMATED ACHTERGROND ELEMENT -->
+        <div class="splash"></div>
+      </nav>
+    </header>
+  </div>
+
+  <header id="header-wrap">
+
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button class="navbar-toggler btn btn-info" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <i class="fa fa-bars"></i>
+          </button>
+          <a href="index.html" class="navbar-brand"><img class="logo" src="images/logo.svg" alt="Logo"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">Over</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#services">Specialisatie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#resume">Cv</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#portfolios">Portfolio</a>
+            </li>
+            <li class="nav-item">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="contact.html">Contactformulier</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="hero-area" class="hero-area-bg">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 text-center">
+            <div class="contents">
+              <h5 class="script-font animate__animated animate__lightSpeedInRight animate__slow">Hallo ik ben</h5>
+              <h1 id="nvdz" class="head-title animate__animated animate__jackInTheBox animate__slow animate__delay-1s">Nico van der zwaag</h1>
+              <p class="script-font animate__animated animate__lightSpeedInLeft animate__slow animate__delay-2s">Front-end Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+
+    <section id="contactFrm" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="img-thumb animate__animated animate__fadeInLeftBig animate__delay-1s">
+              <img class="img-fluid" src="images/portret.jpg" alt="Profiel foto">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="profile-wrapper animate__animated animate__fadeInRightBig animate__delay-1s">
+              <div class="contact-form">
+                <div class="profile-wrapper ">
+                  <h2 class="text-center mb-3 p-2">Contact Formulier</h2>
+
+                  <form id="contactForm" class="row shadow p-3 m-3 border border-primary border-2 rounded" name="contactForm" action="mail.php" method="POST">
+                    <div class="row">
+                      <div class="col-auto">
+                        <div class="form-group">
+                          <label class="form-label" for="name">Naam</label>
+                          <input type="text" class="form-control rounded-phill" id="name" name="name" placeholder="Uw naam" required data-error="Voer aub uw naam in">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="form-label" for="email">Email adres</label>
+                          <input type="email" class="form-control" placeholder="Uw Email adres" id="email" class="form-control" name="e-mail" required data-error="Voer aub uw email adres in">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="form-label" for="phone">Telefoonnummer</label>
+                          <input type="number" class="form-control" placeholder="Uw Telefoonnummer" id="phone" class="form-control" name="phone" required data-error="Voer aub uw telefoon nummer in">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="form-label" for="optie">Maak u keuze</label>
+                          <label class="visually-hidden" for="options"></label>
+                          <select id="optie" class="form-select" name="optie" required data-error="Selecteer aub uw keuze">
+                            <option disabled selected value>Selecteer uw keuze</option>
+                            <option value="vraag" id="btn1">
+                              <p class="toggle-button vraag">Ik heb een vraag</p>
+                            <option value="cv" id="btn2">
+                              <p class="toggle-cv vraag">Ik ontvang graag een uitgebreid Cv</p>
+                            <option value="date" id="btn3">
+                              <p class="toggle-date vraag">Ik wil u graag uitnodigen voor een gesprek</p>
+                            </option>
+                          </select>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+
+                      <div id="opt1">
+                        <p class="reaction">Ik wil u ten eerste bedanken voor uw vraag, u ontvangt zo snel mogelijk het antwoord op uw vraag.</p>
+                      </div>
+
+                      <div id="opt2">
+                        <p class="reaction">Ik wil u ten eerste bedanken voor uw interesse in mijn uitgebreid Cv, u ontvangt zo snel mogelijk het uitgebreid Cv in uw mail.</p>
+                      </div>
+
+                      <div id="opt3">
+                        <p class="reaction">Ik wil u ten eerste bedanken voor uw uitnodiging, u ontvangt binnen 24 uur een afspraakbevestiging.</p>
+                      </div>
+
+                      <div id="date" class="input-group date datepicker p-3" data-provide="datepicker">
+                        <i class="fa fa-calendar"></i>
+                        <input type="text" class="form-control">
+                        <div class="input-group-addon">
+                        </div>
+                        <div class="help-block with-errors"></div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="form-label" for="message">Uw vraag/opmerking</label>
+                          <textarea id="message" class="form-control" placeholder="Uw vraag" rows="5" data-error="Schrijf uw boodschap" required></textarea>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                        <button class="g-recaptcha" id="msgSubmit" type="submit" data-sitekey="6LcCK1EaAAAAAHQXXhMXhp86I0vkGZ6ldXoLH6rf" data-callback='onSubmit' data-action='submit'>Verzend</button>
+                        <div iclass="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <h2 class="text-center mt-3">Contact gegevens</h2>
+      <div class="col-md-12">
+        <div class="footer-top text-center">
+          <div class="footer-top-contact">
+            <div class="single-contact">
+              <div class="contact-icon">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <p>Klaproosstraat 24</p>
+              <p>4341 JV Arnemuiden</p>
+              <p>Zeeland Nederland</p>
+            </div>
+            <div class="single-contact">
+              <div class="contact-icon">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <a href="mailto:info@nicovanderzwaag.nl">Nico van der Zwaag</a>
+            </div>
+            <div class="single-contact">
+              <div class="contact-icon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <p>+31 (0) 6 15 14 60 30</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-text text-center">
+            <ul class="social-icon">
+              <li>
+                <a class="facebook" href="https://www.facebook.com/nico.vanderzwaag" target="_blank"><i class="fa fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="https://www.linkedin.com/in/nico-van-der-zwaag-1b72b0197/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+              </li>
+            </ul>
+            <p>Copyright &copy;<script>
+                document.write(new Date().getFullYear())
+              </script> | Nico van der Zwaag | All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top">
+    <i class="fa fa-arrow-circle-up"></i>
+  </a>
+
+  <script>
+    const nav = document.querySelector('#nav');
+    const menu = document.querySelector('#menu');
+    const menuToggle = document.querySelector('.nav__toggle');
+    let isMenuOpen = false;
+
+    // TOGGLE MENU ACTIEF
+    menuToggle.addEventListener('click', e => {
+      e.preventDefault();
+      isMenuOpen = !isMenuOpen;
+
+      // toggle naast gelegen attributen en active class
+      menuToggle.setAttribute('aria-expanded', String(isMenuOpen));
+      menu.hidden = !isMenuOpen;
+      nav.classList.toggle('nav--open');
+    });
+
+
+    // houd tab binnen navigatie wanneer open
+    nav.addEventListener('keydown', e => {
+      // abort if menu isn't open or modifier keys are pressed
+      if (!isMenuOpen || e.ctrlKey || e.metaKey || e.altKey) {
+        return;
+      }
+
+      // kijkt naar tab, en verplaats focus
+      const menuLinks = menu.querySelectorAll('.nav__link');
+      if (e.keyCode === 9) {
+        if (e.shiftKey) {
+          if (document.activeElement === menuLinks[0]) {
+            menuToggle.focus();
+            e.preventDefault();
+          }
+        } else if (document.activeElement === menuToggle) {
+          menuLinks[0].focus();
+          e.preventDefault();
+        }
+      }
+    });
+
+    function changeColor() {
+      // Array met de kleuren
+      var colors = ["rgba(249, 4, 4, 0.64)", "rgba(247, 6, 74, 0.8)", "rgba(142, 6, 245, 0.89)", "rgba(140, 149, 244, 0.66)", "rgba(6, 178, 250, 0.77)", "rgba(104, 0, 251, 1)"];
+
+      // Willekeurige kleur kiezen uit array. //
+      var random_color = colors[Math.floor(
+        Math.random() * colors.length)];
+
+      var x = document.getElementById('nvdz');
+      x.style.color = random_color;
+    } // Aanroep element. //
+
+    //3 seconden interval voor veranderen element. //
+    function start() {
+      setInterval(changeColor, 3000);
+    }
+    // Begin bovenstaande functie. //
+    start();
+
+    // Functie voor afbeelden verschilende reacties op keuze gebruiker. //
+    $(document).ready(function() {
+      $('#btn1, #btn2 #btn3').on("change");
+      $('#msgSubmit').click(function() {
+        if ($('#btn1').is(":checked")) {
+          $("#opt1").toggle();
+        } else if ($('#btn2').is(":checked")) {
+          $('#opt2').toggle();
+        } else if ($('#btn3').is(":checked")) {
+          $("#opt3").toggle();
+        } else {
+          alert('Er mogen geen lege velden zijn!')
+        }
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+</body>
+
+</html>
